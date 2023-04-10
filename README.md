@@ -2,7 +2,7 @@
 Demo Website for Econic
 
 
-######################
+---------------------------------
 
 ## API
 
@@ -10,7 +10,7 @@ Demo Website for Econic
 * Uses the open source Poetry DB API, to display a random poem every time page is opened or refreshed. 
 * This section is scrollable, if the poem is too big, feel free to scroll in order to read the whole literary work !
 
-######################
+---------------------------------
 
 ## List
 
