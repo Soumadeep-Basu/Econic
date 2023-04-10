@@ -1,38 +1,58 @@
-.App {
+/* Set up the body to have no margin and fill the whole page */
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+/* Define the styles for the animated background */
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #adb5bd, white, #adb5bd, white);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+/* Define the animation for the background */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Define the styles for the content area */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Define the styles for the heading */
+h1 {
+  font-size: 4em;
+  color: #2c7da0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3{
+  color : #2c7da0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Define the styles for the buttons */
+button {
+  
+  margin: 10px;
+  font-size: 1.5em;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 5px;
 }
