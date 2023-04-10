@@ -1,6 +1,8 @@
 # Econic
 Demo Website for Econic
 
+## To view the code, please navigate to the Master Branch. 
+
 
 ---------------------------------
 
